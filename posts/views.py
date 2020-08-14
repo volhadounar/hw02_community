@@ -4,7 +4,7 @@ from . models import Group, Post
 
 
 def index(request):
-    posts = Post.objects[:10]
+    posts = Post.objects.all()[:10]
     return render(request, 'index.html', {'posts': posts})
 
 
