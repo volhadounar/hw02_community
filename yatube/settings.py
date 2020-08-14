@@ -56,8 +56,6 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, "templates")
 
 TEMPLATES = [
     {
-        #какой язык шаблонов мы будем применять в проекте
-        #Django поддерживает два похожих языка шаблонов: Django Template Language (DTL) и Jinja2. Оставим значение по умолчанию: наш выбор — DjangoTemplates
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         "DIRS": [TEMPLATES_DIR],
         'APP_DIRS': True,
@@ -68,8 +66,6 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
-        #картинки, стили, JS или другие файлы
-        #'STATICFILES_DIRS'
         },
     },
 ]
@@ -124,10 +120,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-# задаём произвольный URL, который будет использоваться для запросов к статическим файлам
 STATIC_URL = '/static/'
 
-# теперь логотип можно будет запросить по адресу sitename.ex**/static/**images/logo.png
-
-# задаём адрес директории, куда командой *collectstatic* будет собрана вся статика
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
