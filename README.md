@@ -16,5 +16,5 @@ Getting Started
     4.  ``pip install -r requirements.txt``  -- Should install everything you need
     5.  ``python3 manage.py migrate`` -- Reads all the migrations folders in the application folders and creates / evolves the tables in the database
     6.  ``python3 manage.py createsuperuser``
-    8.  ``python3 manage.py runserver`` -- Running localy
-    9.  And visit http://localhost:8000
+    7.  ``python3 manage.py runserver`` -- Running localy
+    8.  And visit http://localhost:8000
